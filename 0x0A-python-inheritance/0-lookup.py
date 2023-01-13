@@ -2,7 +2,9 @@
 
 """
 
-contains the MyList class
+    This module returns the list of available attributes
+
+    and methods of an object
 
 """
 
@@ -10,20 +12,8 @@ contains the MyList class
 
 
 
-class MyList(list):
+def lookup(obj):
 
-    """a subclass of list"""
+    """This functions looks out for all attributes and methods of an object"""
 
-    def __init__(self):
-
-        """initializes the object"""
-
-        super().__init__()
-
-
-
-    def print_sorted(self):
-
-        """prints the sorted list"""
-
-        print(sorted(self))
+    return dir(obj)
